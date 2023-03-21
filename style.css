@@ -17,7 +17,8 @@
     --white: #fff;
     --black: #000;
     --light-color: #aaa;
-    --border : .2rem solid (var(--blue))
+    --border : .2rem solid (var(--blue));
+    --black-bg: rgba(17,17,17,.7)
 }
 
 html{
@@ -105,8 +106,50 @@ i{
 }
 
 
+section{
+    padding: 3rem 9%;
+}
 
 
+.home{
+    margin: 0 auto;
+    margin-top: 9rem;
+    width: 90%;
+    border-radius: 1rem;
+    background:linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(545077.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    text-align: center;
+}
+
+
+.content span{
+    font-weight: bolder;
+    color: transparent;
+    font-size: 4vw;
+    -webkit-text-stroke: .1rem #fff;
+    display: block;
+}
+
+.content h3{
+    font-size: 6vw;
+    color: #fff;
+}
+
+.content p{
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 2;
+}
 
 
 
@@ -135,6 +178,11 @@ i{
     .header{
         padding: 1.5rem;
     }
+
+    section{
+        padding: 3rem 2rem;
+    }
+
 }
 
 @media (max-width:768px){
@@ -159,6 +207,20 @@ i{
         font-size: 2rem;
         display: block;
     }
+
+
+.home{
+    margin-top: 10rem;
+}
+
+.content span{
+    font-size: 8vw;
+}
+
+.content h3{
+    font-size: 9vw;
+}
+
 
 }
 
